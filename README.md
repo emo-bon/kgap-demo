@@ -21,12 +21,16 @@ Steps:
 
 4. open the jupyter notebook
 
+Either go to http://localhost:8896  
+or try:
 ```bash
 .$ xdg-open $(docker/jupyter_url.sh)  # this gets the url for the service and opens a browser to it
 ```
 
 5. open the graphdb browser ui
 
+Either go to http://localhost:7206  
+or try:
 ```bash
 .$ xdg-open http://localhost:7200     # opens the web ui in a browser
 ```
