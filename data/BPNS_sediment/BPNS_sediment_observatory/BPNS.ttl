@@ -16,7 +16,7 @@
 
 <> 
     a emobon:Observatory ; 
-    emobon:sampleType emobon:Water ;
+    emobon:sampleType emobon:Sediment ;
     emobon:observatoryId 'BPNS'^^xsd:string ;
     emobon:observatorySampleId 'BPNS So'^^xsd:string ; 
 
