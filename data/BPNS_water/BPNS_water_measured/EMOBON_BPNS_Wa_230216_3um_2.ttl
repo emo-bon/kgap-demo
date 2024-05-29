@@ -1,0 +1,159 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> . 
+@prefix prov: <http://www.w3.org/ns/prov#> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix ssn: <http://www.w3.org/ns/ssn/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> . 
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix mr: <http://marineregions.org/ns/ontology#> .
+@prefix emobon: <http://www.embrc.eu/emobon/EmoBonOntology#> .
+
+
+@base <http://data.emobon.embrc.eu/observatory-bpns-crate/water/measured/EMOBON_BPNS_Wa_230216_3um_2> . 
+
+<#chlorophyll>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S27/current/CS002896/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue 'Expected 12-2024'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'HPLC'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#conduc>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/CNDCZZ01/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '33498'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/MSCM/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#density>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/SIGT/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '1.026062'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGMC/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#nitrate>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/NTRAZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '15.1'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'SEAL QuAAtro analysis system + Skalar AutoAnalyser system'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#nitrite>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/NTRIZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0.04'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'SEAL QuAAtro analysis system + Skalar AutoAnalyser system'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#pressure>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S06/current/S0600274/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue 'Expected 12-2024'^^xsd:string ; 
+        qudt:unit <https://qudt.org/vocab/unit/ATM> ; 
+    ] ;
+    schema:measurementTechnique 'CTD'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sea_subsurf_salinity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '33.238'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sea_subsurf_temp>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/TEMP/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '6.791'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sea_surf_salinity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '31.645'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sea_surf_temp>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/TEMP/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '6.812'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#silicate>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/SLCA/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '7.23'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'SEAL QuAAtro analysis system + Skalar AutoAnalyser system'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.

@@ -1,0 +1,72 @@
+# this is a sample docker-compose of how to use kgap microservices
+# it functions as (1) a list of images to be build, (2) a usage-example and (3) a quick-test
+version: "3.7"
+# -----------------------------------------------------------------------
+services: 
+  osdg-tool:
+    image: osdg/osdg-tool:latest
+    container_name: emobon_osdg_tool
+    ports:
+      - 5003:5000
+    labels: 
+      be.vliz.container.project: "EMOBON"
+      be.vliz.container.group: "services"
+  yasgui:
+    image: redpencil/yasgui:latest
+    container_name: emobon_kgap_yasgui
+    environment:
+      DEFAULT_SPARQL_ENDPOINT: "http://graphdb:7200/repositories/${GDB_REPO:-kgap}" # that should be in the setup script | same exposed port as graphdb
+    ports:
+      - "8083:80"
+  graphdb:
+    image: ${REG_NS:-kgap}/kgap_graphdb:${BUILD_TAG:-latest}
+    container_name: emobon_kgap_graphdb
+    env_file:
+      - ./.env
+    #environment: 
+      #GDB_REPO: kgap                       # default should be changed to reflect the name of your particular case
+      #GDB_HOME_FOLDER: /opt/graphdb/home/  # default might be changed to externalise/persist the storage 
+    ports:
+      - 7206:7200     # HTTP
+    volumes:
+      - ./data:/root/graphdb-import/data
+      # todo later - consider mounted volumes for persistence of data ?
+
+  jupyter:
+    image: ${REG_NS:-kgap}/kgap_jupyter:${BUILD_TAG:-latest}
+    container_name: emobon_kgap_jupyter
+    ports:
+      - "8896:8888"
+    links:
+      - graphdb
+    volumes:
+      - "./notebooks:/notebooks" #can this be a env var given by end user?
+      - "./data:/data"
+    env_file:
+      - ./.env
+    environment:
+      GDB_BASE: "http://graphdb:7200/"
+      NOTEBOOK_ARGS: "--NotebookApp.token=''"
+    depends_on:
+      graphdb:
+        condition: service_healthy
+
+  sembench:
+    #build:
+    #    context: ./sembench
+    image: ${REG_NS:-kgap}/kgap_sembench:${BUILD_TAG:-latest}
+    container_name: emobon_kgap_sembench
+    volumes:
+      - "./data:/data"
+      - "./config:/config"
+    env_file:
+      - ./.env
+    # environment:
+    #   - INPUT_DATA_LOCATION=/data
+    #   - OUTPUT_DATA_LOCATION=/data
+    #   - SEMBENCH_DATA_LOCATION=/data
+    #   - SEMBENCH_CONFIG_PATH=/data/sembench.json
+    #   - SCHEDULER_INTERVAL_SECONDS=86400
+    depends_on:
+      graphdb:
+        condition: service_healthy

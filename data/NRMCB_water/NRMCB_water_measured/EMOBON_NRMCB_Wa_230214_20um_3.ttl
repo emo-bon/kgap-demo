@@ -1,0 +1,274 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> . 
+@prefix prov: <http://www.w3.org/ns/prov#> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix ssn: <http://www.w3.org/ns/ssn/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> . 
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix mr: <http://marineregions.org/ns/ontology#> .
+@prefix emobon: <http://www.embrc.eu/emobon/EmoBonOntology#> .
+
+
+@base <http://data.emobon.embrc.eu/observatory-nrmcb-crate/water/measured/EMOBON_NRMCB_Wa_230214_20um_3> . 
+
+<#ammonium>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P35/current/EPC00009/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0.27'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'segmented continuous-flow autoanalyzer'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#chlorophyll>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S27/current/CS002896/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0.38'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'spectrofluorometry'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#conduc>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/CNDCZZ01/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '46.08605'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/MSCM/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD SBE 19plusV2'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#density>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/SIGT/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '28.327'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGMC/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD SBE 19plusV2'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#diss_oxygen>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/DOXMZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '5.2922'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'SBE 43'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#nitrate>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/NTRAZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0.56'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'segmented continuous-flow autoanalyzer'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#nitrite>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/NTRIZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0.32'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'segmented continuous-flow autoanalyzer'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#organism_count>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty 'organism_count'^^xsd:string ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue 'phytoplankton: 3.54E+05; diatoms: 5.27E+03; dinoflagellates: 4.81E+04; coccolitrophores: 3.43E+04; other flagellates: 2.66E+05'^^xsd:string ; 
+        qudt:unit <will need to define ourselves> ; 
+    ] ;
+    schema:measurementTechnique 'phytoplankton; diatoms; dinoflagellates; coccolithophores; other flagellates: Utermöhl (Phytoplankton) Sedimentation Chamber'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#ph>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S06/current/S0600278/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '8.191'^^xsd:string ;  
+    ] ;
+    schema:measurementTechnique 'SBE18'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#ph>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S06/current/S0600278/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '8.191'^^xsd:string ;  
+    ] ;
+    schema:measurementTechnique 'SBE18'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#phaeopigments>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P35/current/EPC00108/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0,27'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'spectrofluorometry'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#phaeopigments>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/PHSD/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0,27'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'spectrofluorometry'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#phosphate>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/PHOS/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0.03'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'segmented continuous-flow autoanalyzer'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#pigments>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/C67/current/PIGX/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0,5314'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'this is not pigments but fluorescense. chl Turner Design Cyclops 7C)'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sea_subsurf_salinity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '38.0196'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD SBE 19plusV2'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sea_subsurf_temp>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/TEMP/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '14.8872'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD SBE 19plusV2'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sea_surf_salinity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '38.0187'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD SBE 19plusV2'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sea_surf_temp>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/TEMP/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '14.8875'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD SBE 19plusV2'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#silicate>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/SLCA/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '1.62'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'segmented continuous-flow autoanalyzer'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#turbidity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/TURBXXXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0.2678'^^xsd:string ; 
+        qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/USTU/> ; 
+    ] ;
+    schema:measurementTechnique 'Turner Cyclops 7 turb'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.

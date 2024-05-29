@@ -1,0 +1,23 @@
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX emobon: <http://www.embrc.eu/emobon/EmoBonOntology#>
+
+SELECT DISTINCT 
+    ?sample 
+    ?measurement 
+    ?result_value 
+    ?result_unit
+WHERE 
+{
+    bind(<{{var}}> as ?var)
+    
+    ?sample sosa:isSampleOf "{{type}}" .
+    ?measurement sosa:hasFeatureOfInterest ?sample . 
+
+    ?measurement a sosa:Observation . 
+    ?measurement sosa:observedProperty ?var . 
+
+    ?measurement sosa:hasResult ?observationResult .
+    ?observationResult qudt:numericValue  ?result_value .
+    ?observationResult qudt:unit ?result_unit . 
+}

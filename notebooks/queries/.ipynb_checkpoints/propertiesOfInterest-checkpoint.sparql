@@ -1,0 +1,8 @@
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+ 
+SELECT DISTINCT ?property_of_interest
+{
+    ?observation a sosa:Observation . 
+    ?observation sosa:observedProperty ?property_of_interest . 
+}

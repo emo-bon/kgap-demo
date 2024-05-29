@@ -1,0 +1,20 @@
+PREFIX emobon: <http://www.embrc.eu/emobon/EmoBonOntology#>
+PREFIX schema: <https://schema.org/>
+ 
+SELECT DISTINCT
+    ?observatory 
+    ?observatory_name 
+    ?contact_name 
+    ?contact_email 
+WHERE 
+{
+    ?observatory a emobon:Observatory .
+    ?observatory emobon:sampleType emobon:Water .
+ 
+    ?observatory schema:contactPoint ?org .
+    ?org schema:legalName ?observatory_name .
+ 
+    ?org schema:address / schema:member ?contactPerson .
+    ?contactPerson schema:name ?contact_name .
+    ?contactPerson schema:email ?contact_email . 
+}

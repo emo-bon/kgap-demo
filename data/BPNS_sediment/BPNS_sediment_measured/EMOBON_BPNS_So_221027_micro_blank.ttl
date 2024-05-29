@@ -1,0 +1,102 @@
+
+
+
+@base <http://data.emobon.embrc.eu/emobon/observation/BPNS/sediment/EMOBON_BPNS_So_221027_micro_blank> . 
+
+<#diss_oxygen>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/DOXMZZXX/> ;
+    
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD broken'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/BPNS/sediment/EMOBON_BPNS_So_221027_micro_blank> ; 
+.
+
+<#ph>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S06/current/S0600278/> ;
+    
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit 'NA'^^xsd:string ; 
+    ] ;
+    schema:measurementTechnique 'no pH measured'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/BPNS/sediment/EMOBON_BPNS_So_221027_micro_blank> ; 
+.
+
+<#pressure>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S06/current/S0600274/> ;
+    
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <https://qudt.org/vocab/unit/ATM> ; 
+    ] ;
+    schema:measurementTechnique 'CTD broken'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/BPNS/sediment/EMOBON_BPNS_So_221027_micro_blank> ; 
+.
+
+<#redox_potential>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P09/current/REDS/> ;
+    
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UUMV/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/BPNS/sediment/EMOBON_BPNS_So_221027_micro_blank> ; 
+.
+
+<#sea_surf_salinity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/> ;
+    
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD broken'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/BPNS/sediment/EMOBON_BPNS_So_221027_micro_blank> ; 
+.
+
+<#sea_surf_temp>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/TEMP/> ;
+    
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD broken'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/BPNS/sediment/EMOBON_BPNS_So_221027_micro_blank> ; 
+.
+
+<#sediment_temp>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <https://vocab.lternet.edu/vocab/vocab/index.php?tema=530&/soil-temperature> ;
+    
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ; 
+    ] ;
+    schema:measurementTechnique 'CTD broken'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/BPNS/sediment/EMOBON_BPNS_So_221027_micro_blank> ; 
+.

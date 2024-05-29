@@ -1,0 +1,118 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> . 
+@prefix prov: <http://www.w3.org/ns/prov#> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix ssn: <http://www.w3.org/ns/ssn/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> . 
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix mr: <http://marineregions.org/ns/ontology#> .
+@prefix emobon: <http://www.embrc.eu/emobon/EmoBonOntology#> .
+
+
+@base <http://data.emobon.embrc.eu/observatory-nrmcb-crate/sediment/measured/EMOBON_NRMCB_So_220427_micro_2> . 
+
+<#diss_oxygen>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/DOXMZZXX/> ;
+    
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '5.3768'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ;
+    ] ;
+    schema:measurementTechnique 'SBE43'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#ph>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S06/current/S0600278/> ;
+    
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '7.48'^^xsd:string ; 
+    ] ;
+    schema:measurementTechnique 'Oxyguard probe'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#ph>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S06/current/S0600278/> ;
+    
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '7.48'^^xsd:string ; 
+    ] ;
+    schema:measurementTechnique 'Oxyguard probe'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#pigments>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/C67/current/PIGX/> ;
+    
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '0,5417'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ;
+    ] ;
+    schema:measurementTechnique 'this is not pigments but fluorescense. chl Turner Design Cyclops 7C)'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#redox_potential>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P09/current/REDS/> ;
+    
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '-137'^^xsd:string ; 
+        qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UUMV/> ;
+    ] ;
+    schema:measurementTechnique 'Oxyguard probe'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sea_surf_salinity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/> ;
+    
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '37.8954'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/> ;
+    ] ;
+    schema:measurementTechnique 'CTD SBE911plusV2'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sea_surf_temp>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/TEMP/> ;
+    
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '16185'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ;
+    ] ;
+    schema:measurementTechnique 'CTD SBE911plusV2'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.
+
+<#sediment_temp>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <https://vocab.lternet.edu/vocab/vocab/index.php?tema=530&/soil-temperature> ;
+    
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '14.4393'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ;
+    ] ;
+    schema:measurementTechnique 'CTD SBE911plusV2'^^xsd:string ;
+    sosa:hasFeatureOfInterest <> ; 
+.

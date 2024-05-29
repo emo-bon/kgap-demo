@@ -1,0 +1,76 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> . 
+@prefix prov: <http://www.w3.org/ns/prov#> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix ssn: <http://www.w3.org/ns/ssn/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> . 
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix mr: <http://marineregions.org/ns/ontology#> .
+@prefix emobon: <http://www.embrc.eu/emobon/EmoBonOntology#> .
+
+@base <http://data.emobon.embrc.eu/observatory-rformosa-crate/sediment/observatory/RFormosa> . 
+
+<> 
+    a emobon:Observatory ; 
+    emobon:sampleType emobon:Water ;
+    emobon:observatoryId 'RFormosa'^^xsd:string ;
+    emobon:observatorySampleId 'RFormosa So'^^xsd:string ; 
+
+    dct:isPartOf [
+        a schema:Project ;
+        schema:name 'EMOBON'^^xsd:string ;
+        schema:description "The EMO BON project"^^xsd:string ;
+        emobon:enaProjAccNum 'https://www.ebi.ac.uk/ena/browser/view/PRJEB51688'^^xsd:anyURI ;
+    ] ;
+    emobon:siteInfo 'Is silt mud, no metagenomics/metabarcoding time series, except the same site OSD sampling on the water column. Nearby the UALG experimental research station Ramalhete.'^^xsd:string ;
+    emobon:broadBiome  'marine biome [ENVO:00000447]'^^xsd:string,  'marine benthic biome[ENVO_01000024]'^^xsd:string;
+    emobon:localBiome 'lagoon [ENVO_00000038]'^^xsd:string, 'shallow_marine_sediment [ENVO:03000034]'^^xsd:string;
+    emobon:marineRegionName 'Atlantic Ocean'^^xsd:string ;
+    emobon:marineRegion 'http://marineregions.org/mrgid/1902'^^xsd:anyURI ;
+    emobon:marineRegionName 'North Atlantic Ocean'^^xsd:string ;
+    emobon:marineRegion 'http://marineregions.org/mrgid/1912'^^xsd:anyURI ;
+    emobon:marineRegionName 'Ria Formosa'^^xsd:string ;
+    emobon:marineRegion 'http://marineregions.org/mrgid/29473'^^xsd:anyURI ;
+    emobon:geoLocation [ 
+        a sf:Point ; 
+        geo:asWKT "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Point (37.005639 -7.96925)" ;
+    ]; 
+    schema:contactPoint [ 
+        a emobon:Organization ;
+        schema:legalName 'Centre of Marine Sciences (CCMAR)'^^xsd:string ;
+        emobon:edmoId 'https://edmo.seadatanet.org/report/2516'^^xsd:anyURI ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry 'Portugal'^^xsd:string ; 
+        schema:member [
+            a schema:Person ;
+            schema:name 'Bruno Louro'^^xsd:string ;
+            schema:email 'blouro@ualg.pt'^^xsd:string ;
+            schema:identifier 'https://orcid.org/0000-0001-8164-581X'^^xsd:anyURI ;
+        ]
+        ] ; 
+    ] ;
+    emobon:waterColumnDepth '0'^^xsd:string ;
+    emobon:originCountry 'Portugal'^^xsd:string ;
+    emobon:enaStudyAccNum 'https://www.ebi.ac.uk/ena/browser/view/PRJEB51661'^^xsd:anyURI ;
+    emobon:hasMixsPackage 'sediment'^^xsd:string ; 
+    emobon:soilType 'biogenous'^^xsd:string ; 
+.
+
+
+<http://marineregions.org/mrgid/http%3A%2F%2Fmarineregions.org%2Fmrgid%2F1902>
+    mr:contains <http://marineregions.org/mrgid/http%3A%2F%2Fmarineregions.org%2Fmrgid%2F1912> ;
+.
+
+<http://marineregions.org/mrgid/http%3A%2F%2Fmarineregions.org%2Fmrgid%2F1912>
+    mr:contains <http://marineregions.org/mrgid/http%3A%2F%2Fmarineregions.org%2Fmrgid%2F29473> ;
+    mr:isPartOf <http://marineregions.org/mrgid/http%3A%2F%2Fmarineregions.org%2Fmrgid%2F1902> ; 
+.
+
+<http://marineregions.org/mrgid/http%3A%2F%2Fmarineregions.org%2Fmrgid%2F29473>
+    mr:isPartOf <http://marineregions.org/mrgid/http%3A%2F%2Fmarineregions.org%2Fmrgid%2F1912> ;
+.

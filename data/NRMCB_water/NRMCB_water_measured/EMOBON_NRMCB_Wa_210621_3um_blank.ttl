@@ -1,0 +1,535 @@
+
+
+
+@base <http://data.emobon.embrc.eu/emobon/observation/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> . 
+
+<#alkalinity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/ALKYZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/MEQL/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#ammonium>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P35/current/EPC00009/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#bac_prod>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/UPTH/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <cannot find exactly this: ug/m3/h (http://vocab.nerc.ac.uk/collection/P06/current/UGM3/) or ug/l/h (http://vocab.nerc.ac.uk/collection/P06/current/MGLH/): if we use these, we will need to add a factor to the logsheet values> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#biomass>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <NA> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/GPRL/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#chem_administration>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <NA> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit 'NA'^^xsd:string ; 
+    ] ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#chlorophyll>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S27/current/CS002896/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#conduc>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/CNDCZZ01/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/MSCM/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#density>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/SIGT/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGMC/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#diss_carb_dioxide>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/CO2AQXXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#diss_inorg_carb>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/TCO2ZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#diss_org_carb>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/DOCC/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#diss_org_nitro>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/MDMAP009/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#diss_oxygen>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/DOXMZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#down_par>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/VSRW/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UMES/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#n_alkanes>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <NA> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#nitrate>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/NTRAZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#nitrite>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/NTRIZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#organism_count>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <NA> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <will need to define ourselves> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#part_org_carb>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P35/current/EPC00157/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#part_org_nitro>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P09/current/PONP/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#petroleum_hydrocarb>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/TPHFIWAT/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#ph>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S06/current/S0600278/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit 'NA'^^xsd:string ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#phaeopigments>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P35/current/EPC00108/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#phaeopigments>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/PHSD/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#phosphate>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/PHOS/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#pigments>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/C67/current/PIGX/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#pressure>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/S06/current/S0600274/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <https://qudt.org/vocab/unit/ATM> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#primary_prod>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/PPRD/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UGDC/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#sea_subsurf_salinity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#sea_subsurf_temp>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/TEMP/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#sea_surf_salinity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#sea_surf_temp>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/TEMP/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#silicate>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/SLCA/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#sulfate>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/SPHTMAXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#sulfate>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/SO4XCLP1/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#sulfide>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/H2SXZZXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#turbidity>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P01/current/TURBXXXX/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/USTU/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
+
+<#water_current>
+    a sosa:Observation, schema:Observation ;
+    sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/RFVL/> ;
+
+    sosa:hasResult [
+        a sosa:Result ; 
+        rdf:type qudt:QuantityValue ; 
+        qudt:numericValue 'NA'^^xsd:string ; 
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/CMPS/> ; 
+    ] ;
+    schema:measurementTechnique 'NA'^^xsd:string ;
+    sosa:hasFeatureOfInterest </emobon/sample/NRMCB/water/EMOBON_NRMCB_Wa_210621_3um_blank> ; 
+.
