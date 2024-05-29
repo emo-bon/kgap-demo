@@ -8,8 +8,10 @@ SELECT DISTINCT
     ?contact_email 
 WHERE 
 {
+    bind(<http://www.embrc.eu/emobon/EmoBonOntology#{{type}}> as ?type)
+    
     ?observatory a emobon:Observatory .
-    ?observatory emobon:sampleType emobon:Water .
+    ?observatory emobon:sampleType ?type .
  
     ?observatory schema:contactPoint ?org .
     ?org schema:legalName ?observatory_name .
