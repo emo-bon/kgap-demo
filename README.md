@@ -1,6 +1,6 @@
-# Open Science Metrics
+# k-gap demo - querying EMO-BON triples 
 
-## using this project
+#### using this project
 
 Steps:
 
