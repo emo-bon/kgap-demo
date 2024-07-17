@@ -1,6 +1,10 @@
 # k-gap demo - querying EMO-BON triples 
 
-#### using this project
+#### What is this?
+KGAP - Knowledge Graph Analysis Platform - will allow you to investigate data provided in RDF format. In this case, we can read in the turtle files from the observatory logsheets, or the MetaGOflow outputs, and investigate them.
+At present you have to copy the ttl files to the data/ folder (following the examples already there); to be added is a config file that will do this for you. 
+
+#### To using KGAP on EMO BON
 
 Steps:
 
